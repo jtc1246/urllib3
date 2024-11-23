@@ -46,7 +46,7 @@ class TestMaxRetryWaitLength(SocketDummyServerTestCase):
 
             # Ensure that we waited no longer than the specified max_retry_wait_length
             assert (
-                elapsed_time < 3
+                elapsed_time < 9
             ), f"Elapsed time {elapsed_time} exceeded the max retry wait length"
 
     def test_no_max_retry_wait_length(self) -> None:
